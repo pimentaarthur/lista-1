@@ -1,0 +1,48 @@
+using System;
+
+    namespace num1{
+
+        class num1{
+
+
+            static void Main(String [] args){
+                
+                String x;
+                double salario,newsalario;
+
+                Console.WriteLine("informe o salário: ");
+                salario = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("tecle A para aumento de 8% do salario \ntecle B para aumento de 11% do salario \ntecle C para aumento fixo");
+                x = Console.ReadLine();
+                x = x.ToUpper();
+
+                switch (x)
+                {
+                    case "A":
+                         newsalario = (salario *8)/100;
+                         newsalario = newsalario +salario;
+                         Console.WriteLine("seu novo salario é :"+newsalario);
+                    break;
+                    case "B":
+                        newsalario = (salario*11)/100;
+                        newsalario = newsalario + salario;
+                        Console.WriteLine("seu novo salario é :"+newsalario);
+                    break;
+                    case "C": 
+                    if (salario<=1000)
+                    {
+                        newsalario = salario + 350;
+                        Console.WriteLine("seu novo salario é :"+newsalario);
+                    }
+                    else
+                    {
+                        newsalario = salario + 200;
+                        Console.WriteLine("seu novo salario é :"+newsalario);
+                    }
+                    break;
+                    
+                }
+            }
+        }
+    }
