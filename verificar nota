@@ -1,0 +1,39 @@
+using System;
+
+    namespace nota{
+
+        class nota{
+
+
+            static void Main(String [] args){
+
+                int nota;
+
+                Console.WriteLine("informe a sua nota");
+                nota = int.Parse(Console.ReadLine());
+
+                if(nota>=8 && nota<=10){
+
+                    Console.WriteLine("sua nota: "+nota+ " é otima.");
+                }
+                else if(nota>=7 && nota<8){
+
+                 Console.WriteLine("sua nota: "+nota+ " é Boa.");
+                }
+               
+                else if(nota>=5 && nota<7){
+
+                Console.WriteLine("sua nota: "+nota+ " é Boa.");
+            }
+               else if(nota < 5 && nota>=0){
+
+                Console.WriteLine("sua nota: "+nota+ " insatifatória");
+            }
+             else {
+
+                Console.WriteLine("sua nota: "+nota+ " invalida");
+            }
+
+            }
+        }
+    }
