@@ -1,0 +1,33 @@
+using System;
+
+    namespace idade{
+
+        class idade{
+
+
+            static void Main(String [] args){
+
+                int ano , aniversario; //declarar variavel
+
+               Console.WriteLine("informe o ao do seu nascimento"); 
+
+               ano = int.Parse(Console.ReadLine());
+
+               Console.WriteLine("você ja fez aniversario este ano? caso sim digite '1' caso não aperte qualquer tecla");
+               aniversario = int.Parse(Console.ReadLine());
+
+               switch(aniversario){    
+
+                case 1 :
+                    ano = 2022 - ano;
+                break;
+                default :
+                    ano = 2021 - ano;
+                break;
+               }
+               Console.WriteLine("a sua idade atual é = "+ano+" anos");
+               
+
+            }
+        }
+    }
