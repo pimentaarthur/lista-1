@@ -1,0 +1,32 @@
+using System;
+
+    namespace num1{
+
+        class num1{
+
+
+            static void Main(String [] args){
+                
+                    string x;
+                    Console.WriteLine("informe um simbolo do teclado");
+                    x = Console.ReadLine();
+
+                    switch(x){
+                        
+                        case "<":
+                        Console.WriteLine("SINAL DE MENOR");
+                        break;
+                        case ">":
+                        Console.WriteLine("SINAL DE MAIOR");
+                        break;
+                        case "=" :
+                        Console.WriteLine("SINAL DE IGUAL");
+                        break;
+                        default:
+                        Console.WriteLine("OUTRO SINAL");
+                        break;
+
+                    }
+                }
+            }
+        }
