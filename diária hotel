@@ -1,0 +1,35 @@
+using System;
+
+    namespace hotel{
+
+        class hotel{
+
+
+            static void Main(String [] args){
+
+                double diaria, diariapro, diaria50, diaria80 , diferenca;
+
+                Console.WriteLine("informe o valor da diaria");
+                diaria = double.Parse(Console.ReadLine());
+
+                diariapro = (diaria * 80)/100;
+
+                diaria80 = diariapro * 60;
+
+                diaria50 = diaria * 37.5;
+
+                diferenca = diaria80 - diaria50;
+
+                Math.Abs(diferenca);
+
+
+                Console.WriteLine("valor da diaria promocional = "+diariapro+" R$");
+                Console.WriteLine("valor total arrecadado com 80% de ocupação e diaria promocional = "+diaria80+" R$");
+                Console.WriteLine("valor total arrecadado com 50% de ocupação e diaria normal = "+diaria50+" R$");
+                Console.WriteLine("valor da diferença entre ambos = "+diferenca+" R$");
+
+            }
+        }
+    }
+
+
