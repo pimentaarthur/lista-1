@@ -1,0 +1,30 @@
+using System;
+
+    namespace num1{
+
+        class num1{
+
+
+            static void Main(String [] args){
+
+                int a , b , soma; //declarar variavel
+
+                a = int.Parse(Console.ReadLine()); //pegar o número A
+
+                b = int.Parse(Console.ReadLine()); //pegar o número B
+
+                soma = a+b; //soma dos números
+
+                if(soma>=10){
+
+                    soma+=5;      //se maior que 10 irá somar 5
+                }
+                else{
+                    soma+=7;      //se menor que 10 irá somar 7
+                }
+                Console.WriteLine(soma);  //mostrar no console
+
+
+            }
+        }
+    }
