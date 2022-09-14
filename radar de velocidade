@@ -1,0 +1,39 @@
+using System;
+
+    namespace num1{
+
+        class num1{
+
+
+            static void Main(String [] args){
+                
+                    int velocidademax,velocidademotorista;
+                   
+                    Console.WriteLine("informe a velocidade permitida da via:");
+                   
+                    velocidademax = int.Parse(Console.ReadLine());
+                  
+                    Console.WriteLine("informe a velocidade do motorista:");
+                  
+                    velocidademotorista = int.Parse(Console.ReadLine());
+
+                    if(velocidademotorista - velocidademax<=0)
+                    {
+                        Console.WriteLine("Motorista respeitou a lei");
+                    }
+                    else if(velocidademotorista - velocidademax <=10 && velocidademotorista-velocidademax >0){
+
+                        Console.WriteLine("o motorista tomou uma multa de R$: 50,00");
+                    }
+                    else if(velocidademotorista - velocidademax <=30 && velocidademotorista-velocidademax >10){
+
+                        Console.WriteLine("o motorista tomou uma multa de R$: 100,00");
+                    }
+                    else {
+                        Console.WriteLine("o motorista tomou uma multa de R$: 200,00");
+                    }
+
+                    
+                }
+            }
+        }
