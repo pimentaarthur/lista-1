@@ -1,0 +1,23 @@
+using System;
+
+    namespace maiornum{
+
+        class maiornum{
+
+
+            static void Main(String [] args){
+
+                int a , b , maior; //declarar variavel
+
+                a = int.Parse(Console.ReadLine()); //pegar o número A
+
+                b = int.Parse(Console.ReadLine()); //pegar o número B
+
+                maior = Math.Max(a,b); //analisar o maior número
+
+                Console.WriteLine("o maior número é = "+maior); //mostrar no console o maior número
+
+
+            }
+        }
+    }
