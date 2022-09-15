@@ -1,0 +1,22 @@
+using System;
+
+    namespace num1
+    {
+        class num1
+        {
+         public static void Main(string[] args){
+
+             double a,b,x;
+
+             Console.WriteLine("informe o coeficiente A");
+             a = double.Parse(Console.ReadLine());
+
+             Console.WriteLine("informe o coeficiente B");
+             b= double.Parse(Console.ReadLine());
+
+             x = b/a;
+             Console.WriteLine("a raiz da equação é: "+a+"*"+x+" + "+b+" = 0");
+         }
+         
+        }
+    }
